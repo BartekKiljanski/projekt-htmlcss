@@ -111,11 +111,11 @@ h3 {
     text-align: center;
     font-size: 120px;
 }
-/* .sidebar a:hover {
+.sidebar a:hover {
     background-color: white;
     color: black;
     
-} */
+}
 .person {
     height: 740px;
     background-color: #F1F1F1;
@@ -160,7 +160,7 @@ h3 {
     position: relative;
     margin-left:300px;
     top: 200px;  
-    /* width: 570px; */
+    
     display: block;
     font-weight: 400; 
     line-height: 21px;
@@ -223,10 +223,22 @@ h3 {
     align-content: center;
     gap: 63px;
     text-align: center;
-    transition: all initial 0.5s;
+    transition: transform initial 0.5s;
     cursor: pointer;
 
 }
+ .wheel {
+    
+    position: absolute;
+width: 37.65px;
+height: 37.65px;
+
+background: #E07A64;
+border-radius: 50%;
+left: 110px;
+top: -10px;
+z-index: 1;
+} 
 
 
 
@@ -246,9 +258,9 @@ h3 {
  
   
 }
-/* .u1:hover , .u2:hover , .u3:hover , .u4:hover , .u5:hover , .u6:hover {
+.u1:hover , .u2:hover , .u3:hover , .u4:hover , .u5:hover , .u6:hover {
     transform: scale(1.05);
-} */
+}
 .p1 , .p2 , .p3 , .p4 , .p5 , .p6 {
 font-size: 20px;
 color: black;
@@ -292,7 +304,18 @@ text-transform: uppercase;
     color: white;
 }
 
+@media screen and (min-width: 769px) {
+    .u1:hover , .u2:hover , .u3:hover , .u4:hover , .u5:hover , .u6:hover {
+        transform: scale(1.05);
+    }
+    .sidebar a:hover {
+        background-color: white;
+        color: black;
+        
+    }
 
+
+}
 
 @media screen and (max-width: 768px) {
     .container{
@@ -430,7 +453,11 @@ text-transform: uppercase;
         
     
     }
-  
+   .wheel{
+        left: 32px;
+        top:-15px;
+    } 
+   
     .firma {
         top: 76px;
         left: 0;
