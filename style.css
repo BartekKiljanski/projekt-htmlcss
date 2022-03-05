@@ -13,9 +13,12 @@ html{
 
 }
 img {
-    max-width: 45px;
+    max-width: 40px;
     margin-top: 8px;
     
+}
+.logo {
+    margin: 10px;
 }
 .header{
     box-sizing: border-box;
@@ -311,15 +314,21 @@ text-transform: uppercase;
 
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 442px) and (max-width: 768px) {
+
+
     .container{
-    
-        width: 441px;
+        
+        max-width: 768px;
+        margin:0 auto;
+        
+
+        
         
     
     }
     .header{
-        width: 441px;
+        max-width: 768px;
     }
     .nav{
         display: none;
@@ -330,7 +339,217 @@ text-transform: uppercase;
        
     }
     .sidebar h1{
-        width: 80%;
+        max-width: 80%;
+        position: relative;
+        left: 14px;
+        
+       
+    }
+    .sidebar h2 {
+        left: 14px;
+        margin-top: 10px;
+
+    }
+
+    .sidebar a {
+        left: 13px;
+    }
+    .person {
+        height: 1100px;
+    }
+    .spec {
+      left: 255px;
+        
+        margin-right: 0;
+        margin-left: 0;
+        
+    }
+    .elipse:nth-last-of-type(odd)
+    {
+    top: -225px;
+     margin-right: auto;
+    margin-left: auto;
+    display: block;
+
+    }
+    .elipse:nth-last-of-type(even)
+    {
+    top: 550px;
+     margin-right: auto;
+    margin-left: auto;
+    display: block;
+    float: none;
+
+    }
+
+    .imie1 { 
+        max-width: 700px;
+        margin: 0;
+        padding-left: 14px;
+        padding-right: 14px;
+         top: 120px;
+         left: 0%;
+         box-sizing: border-box;
+        
+    }
+    .lorem1{
+        left: 0;
+        margin: 0;
+        margin-right: 14px;
+        padding-left: 14px;
+        padding-right: 14px;
+        max-width: 700px;
+        top: 125px;
+        box-sizing: border-box;
+    }
+    
+     .imie2{
+        
+        box-sizing: border-box;
+       left: -100px;
+        top: 250px;
+        text-align: start;
+        margin-right: 10px;
+       width:650px;
+        
+        
+
+
+    }
+  
+    .lorem2{
+        box-sizing: border-box;
+        padding-right: 0;
+        padding-left: -0;
+        margin: 0;
+        margin-right: 0;
+        max-width: 700px;
+        top: 60px;
+        text-align: start;
+        
+      
+       
+
+
+    }
+
+    .oferta {
+        
+        
+        height: 1200px;
+        background:  #405D78;
+        margin: 0 auto;
+        left: 0;
+        
+       
+        
+    }
+     .box{
+         left: 0;
+         margin: 0 auto;
+        position: relative;
+        top: 155px;
+        display: grid;
+        grid-template-columns:repeat(2, 250px);
+        grid-template-rows: repeat(3, 250px) ;
+        justify-content:center;
+        align-content: center;
+        gap: 35px;
+        text-align: center;
+    
+        
+    
+    }
+   .wheel{
+        left: 95px;
+        top:-15px;
+    } 
+   
+    .firma {
+        top: 76px;
+        left: 0;
+        text-align: center;
+        margin-right: 10px;
+        margin-left: 10px;
+        max-width: 768px;
+        height: 40px; 
+        position: relative;
+        font-size: 26px;
+       
+        
+    
+    }
+   
+    
+    
+    
+    
+    .stopka {
+        position: absolute;
+        max-width: 768px;
+        height: 147px;
+        background:#4E4E4E;
+       
+    }
+    .text_stopka{
+        position: relative;
+        margin-top: 38px;
+        margin-left: 22px;
+       color: #FFFFFF;
+        font-weight: bold;
+        line-height: 21px;
+        font-size: 18px;
+        left: 150px;
+        
+    }
+    
+    .icon {
+      color: white;
+      position: relative; 
+      float: none;
+      display: flex;
+      text-align: center;
+      gap: 18px;
+      width: 31px;
+      height: 31px;
+      left: 140px;
+      
+      margin-right: 182px ;
+      margin-left: 186px;
+      margin-top: 25px;
+      text-align: center;
+      
+    
+       
+    }  
+    
+    
+    
+}
+
+@media screen and (max-width: 442px) { 
+    .container{
+        
+       max-width: 441px;
+        margin:0 auto;
+        
+        
+        
+    
+    }
+    .header{
+        max-width: 441px;
+    }
+    .nav{
+        display: none;
+        
+    }
+    .sidebar {
+        height: 574px;
+       
+    }
+    .sidebar h1{
+        max-width: 80%;
         position: relative;
         left: 14px;
         
@@ -374,7 +593,7 @@ text-transform: uppercase;
     }
 
     .imie1 { 
-        width: 441px;
+        max-width: 441px;
         margin: 0;
         padding-left: 14px;
         padding-right: 14px;
@@ -389,7 +608,7 @@ text-transform: uppercase;
         margin-right: 14px;
         padding-left: 14px;
         padding-right: 14px;
-        width: 441px;
+        max-width: 441px;
         top: 125px;
         box-sizing: border-box;
     }
@@ -403,7 +622,7 @@ text-transform: uppercase;
         height: 100px;
         margin: 0;
         padding-left: 14px;
-        width: 441px;
+        max-width: 441px;
         
         
 
@@ -416,7 +635,7 @@ text-transform: uppercase;
         padding-left: -14px;
         margin: 0;
         margin-right: 14px;
-        width: 441px;
+        max-width: 441px;
         top: 50px;
         text-align: start;
         
@@ -458,7 +677,7 @@ text-transform: uppercase;
         text-align: center;
         margin-right: 10px;
         margin-left: 10px;
-        width: 422px;
+        max-width: 422px;
         height: 40px; 
         position: relative;
         font-size: 26px;
@@ -473,7 +692,7 @@ text-transform: uppercase;
     
     .stopka {
         position: absolute;
-        width: 441px;
+       max-width: 441px;
         height: 147px;
         background:#4E4E4E;
        
@@ -481,7 +700,7 @@ text-transform: uppercase;
     .text_stopka{
         position: relative;
         margin-top: 38px;
-        margin-left: 22px;
+        margin-left: 32px;
        color: #FFFFFF;
         font-weight: bold;
         line-height: 21px;
