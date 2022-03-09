@@ -529,18 +529,19 @@ text-transform: uppercase;
     
 }
 
-@media screen and (max-width: 442px) { 
+ @media screen and (min-width:320px) and (max-width: 442px) { 
+   
     .container{
         
-       width: 442px;
-        margin:0 auto;
+       width: 100%;
+        
         
         
         
     
     }
     .header{
-        width: 441px;
+        width: 100%;
     }
     .nav{
         display: none;
@@ -567,10 +568,10 @@ text-transform: uppercase;
         left: 13px;
     }
     .person {
-        height: 1100px;
+        height: 1150px;
     }
     .spec {
-        
+        width: 100%;
         text-align: center;
         margin-right: 0;
         margin-left: 0;
@@ -579,7 +580,7 @@ text-transform: uppercase;
     }
     .elipse:nth-last-of-type(odd)
     {
-    top: -275px;
+    top: -280px;
      margin-right: auto;
     margin-left: auto;
     display: block;
@@ -587,7 +588,7 @@ text-transform: uppercase;
     }
     .elipse:nth-last-of-type(even)
     {
-    top: 550px;
+    top: 560px;
      margin-right: auto;
     margin-left: auto;
     display: block;
@@ -611,7 +612,7 @@ text-transform: uppercase;
         margin-right: 14px;
         padding-left: 14px;
         padding-right: 14px;
-        max-width: 441px;
+        max-width: 100%;
         top: 125px;
         box-sizing: border-box;
     }
@@ -650,7 +651,7 @@ text-transform: uppercase;
 
     .oferta {
     
-        height: 2408px;
+        height: 2300px;
         background:  #405D78;
        
         
@@ -659,8 +660,8 @@ text-transform: uppercase;
         position: relative;
         top: 155px;
         display: grid;
-        grid-template-columns:repeat(1, 338px);
-        grid-template-rows: repeat(6, 331px) ;
+        grid-template-columns:repeat(1, 290px);
+        grid-template-rows: repeat(6, 290px) ;
         justify-content:center;
         align-content: center;
         gap: 35px;
@@ -669,9 +670,15 @@ text-transform: uppercase;
         
     
     }
+    .p1{
+        margin-left: -20px;
+    }
    .wheel{
-        left: 32px;
-        top:-15px;
+       position: relative;
+       left: -25%;
+       top: -50%;
+       
+        
     } 
    
     .firma {
@@ -683,11 +690,12 @@ text-transform: uppercase;
         max-width: 100%;
         height: 40px; 
         position: relative;
-        font-size: 26px;
+        font-size: 22px;
        
         
     
     }
+
    
     
     
@@ -695,7 +703,7 @@ text-transform: uppercase;
     
     .stopka {
         position: absolute;
-       width: 442px;
+       width: 100%;
        
         height: 147px;
         background:#4E4E4E;
@@ -734,4 +742,4 @@ text-transform: uppercase;
     
     
     
-}
+} 
