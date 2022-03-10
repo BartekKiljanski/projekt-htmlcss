@@ -126,16 +126,16 @@ h3 {
 
 .spec
 {
-    position: relative;
+    text-align: center;
     font-size: 36px;
     font-weight: 700;
     line-height: 42px;
     align-items: center;
-    width: 386px;
+    
     height: 35px;
-    top: 50px;
-    left: 34px;
-    margin-left: 34px;
+    padding-top: 20px;
+    
+   
     
 }
 
@@ -278,9 +278,10 @@ text-transform: uppercase;
    
 }
 .text_stopka{
-    position: relative;
+text-align: center;
     margin-top: 25px;
-    margin-left: 94px;
+    margin-left: 5px;
+    margin-right: 5px;
     color: #FFFFFF;
     font-weight: bold;
     line-height: 21px;
@@ -289,7 +290,7 @@ text-transform: uppercase;
 
 .icon {
   color: white;
-  position: relative; 
+  
   float: right;
   display: flex;
   gap: 18px;
@@ -506,14 +507,14 @@ text-transform: uppercase;
     
     
     .stopka {
-        position: absolute;
+       
         max-width: 768px;
         height: 147px;
         background:#4E4E4E;
        
     }
     .text_stopka{
-        position: relative;
+        
         margin-top: 38px;
         margin-left: 40px;
        color: #FFFFFF;
